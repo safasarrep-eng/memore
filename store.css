@@ -1,0 +1,190 @@
+/* إعداد عام */
+body {
+    margin: 0;
+    font-family: 'Tajawal', sans-serif;
+    background-color: #111;
+    color: #f0f0f0;
+    line-height: 1.8;
+    direction: rtl;
+}
+
+/* 🌫️ الصفحة الرئيسية بتصميم جديد */
+.home {
+    background-color: #d8d8d8; /* رمادي هادئ */
+    color: #111;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    font-family: 'Tajawal', sans-serif;
+}
+
+/* ترويسة الصفحة الرئيسية */
+.main-header {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: 40px;
+}
+
+.main-header .content {
+    max-width: 800px;
+    z-index: 2;
+}
+
+.main-header h1 {
+    font-size: 3.5em;
+    color: #a00000; /* أحمر غامق */
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.main-header .intro-text {
+    font-size: 1.6em;
+    color: #111;
+    line-height: 1.9;
+    margin-bottom: 40px;
+}
+
+.main-header .highlight {
+    color: #a00000;
+    font-weight: bold;
+}
+
+/* زر الانتقال من الصفحة الرئيسية */
+.memory-btn {
+    display: inline-block;
+    padding: 16px 35px;
+    background-color: #a00000;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 1.3em;
+    font-weight: bold;
+    transition: 0.3s ease;
+}
+
+.memory-btn:hover {
+    background-color: #c72b2b;
+    transform: scale(1.05);
+}
+
+/* تذييل الصفحة الرئيسية */
+.main-footer {
+    background-color: #bfbfbf;
+    padding: 15px;
+    color: #222;
+    font-size: 1.1em;
+    border-top: 2px solid #a00000;
+}
+
+/* ترويسة عامة لباقي الصفحات */
+header {
+    text-align: center;
+    padding: 60px 20px;
+    background: linear-gradient(180deg, #000, #1c1c1c);
+    color: #fff;
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    color: #a82c41;
+}
+
+header p {
+    font-size: 1.2em;
+    color: #ddd;
+}
+
+/* الأقسام داخل صفحة الذكريات */
+.memory-section, .video-section, .conclusion-section {
+    max-width: 800px;
+    margin: 50px auto;
+    background-color: #1a1a1a;
+    padding: 25px 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.05);
+}
+
+.memory-section h2, .video-section h2, .conclusion-section h2 {
+    color: #a82c41;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.memory-section p, .video-section p, .conclusion-section p {
+    color: #ddd;
+    font-size: 1.1em;
+    line-height: 2;
+}
+
+/* معرض الصور */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.gallery img {
+    width: 230px;
+    height: 170px;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 1px solid #444;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+}
+
+/* الفيديو */
+video, iframe {
+    width: 100%;
+    max-width: 720px;
+    border-radius: 8px;
+    border: 1px solid #444;
+}
+
+/* زر العودة */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #000;
+    color: #888;
+}
+
+.back-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #a82c41;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+.back-btn:hover {
+    background-color: #c54257;
+}
+
+/* 📱 تكيف مع الشاشات الصغيرة */
+@media (max-width: 600px) {
+    .main-header h1 {
+        font-size: 2.4em;
+    }
+    .main-header .intro-text {
+        font-size: 1.2em;
+    }
+    .gallery img {
+        width: 100%;
+        height: auto;
+    }
+}
